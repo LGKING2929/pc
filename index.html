@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshya PC - Ultimate Gaming & Content Creation Build</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">LAKSHYA PC</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">Initializing Ultimate Build...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">LAKSHYA</span>
+                <span class="logo-accent">PC</span>
+            </div>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#3d-showcase" class="nav-link">3D Model</a>
+                <a href="#components" class="nav-link">Components</a>
+                <a href="#performance" class="nav-link">Performance</a>
+                <a href="#future-proof" class="nav-link">Future-Proof</a>
+                <a href="#comparison" class="nav-link">Compare</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 ULTIMATE GAMING MACHINE</div>
+            <h1 class="hero-title">
+                <span class="title-line">LAKSHYA</span>
+                <span class="title-line accent">PC BUILD</span>
+            </h1>
+            <p class="hero-description">
+                Experience the pinnacle of gaming and content creation with three meticulously crafted build configurations. 
+                From budget-conscious performance to no-compromise excellence, discover the perfect balance of power, aesthetics, and future-proofing.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Build Tiers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Premium Components</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Future-Proof</div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <button class="cta-primary" onclick="scrollToSection('3d-showcase')">
+                    <span>Explore 3D Model</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="cta-secondary" onclick="scrollToSection('components')">
+                    View Components
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Build Selector -->
+    <section class="build-selector">
+        <div class="container">
+            <div class="selector-header">
+                <h2>Choose Your Configuration</h2>
+                <p>Each build is carefully optimized for different performance needs and budgets</p>
+            </div>
+            <div class="build-options">
+                <div class="build-option active" data-tier="white-tier">
+                    <div class="option-header">
+                        <div class="option-badge premium-badge">PREMIUM</div>
+                        <h3>White Aesthetic</h3>
+                        <div class="option-price">AED 12,804</div>
+                    </div>
+                    <div class="option-specs">
+                        <div class="spec">RTX 4070 Ti Super White</div>
+                        <div class="spec">Ryzen 7 7800X3D</div>
+                        <div class="spec">32GB DDR5 White</div>
+                        <div class="spec">Premium RGB Ecosystem</div>
+                    </div>
+                    <div class="option-performance">
+                        <div class="perf-bar">
+                            <div class="perf-fill premium-fill" style="width: 100%"></div>
+                        </div>
+                        <span>4K Gaming + Premium Aesthetics</span>
+                    </div>
+                    <div class="special-features">
+                        <div class="feature-badge">🎨 Coordinated White Theme</div>
+                        <div class="feature-badge">💡 Advanced RGB Control</div>
+                        <div class="feature-badge">📱 Wireless Fan Control</div>
+                    </div>
+                </div>
+                <div class="build-option" data-tier="top-tier">
+                    <div class="option-header">
+                        <div class="option-badge">FLAGSHIP</div>
+                        <h3>Top Tier</h3>
+                        <div class="option-price">AED 9,804</div>
+                    </div>
+                    <div class="option-specs">
+                        <div class="spec">RTX 4070 Ti Super</div>
+                        <div class="spec">Ryzen 7 7800X3D</div>
+                        <div class="spec">32GB DDR5</div>
+                    </div>
+                    <div class="option-performance">
+                        <div class="perf-bar">
+                            <div class="perf-fill" style="width: 100%"></div>
+                        </div>
+                        <span>4K Gaming Ready</span>
+                    </div>
+                </div>
+                <div class="build-option" data-tier="mid-tier">
+                    <div class="option-header">
+                        <div class="option-badge">BALANCED</div>
+                        <h3>Mid Tier</h3>
+                        <div class="option-price">AED 9,104</div>
+                    </div>
+                    <div class="option-specs">
+                        <div class="spec">RTX 4070</div>
+                        <div class="spec">Ryzen 7 7800X3D</div>
+                        <div class="spec">32GB DDR5</div>
+                    </div>
+                    <div class="option-performance">
+                        <div class="perf-bar">
+                            <div class="perf-fill" style="width: 85%"></div>
+                        </div>
+                        <span>1440p High Refresh</span>
+                    </div>
+                </div>
+                <div class="build-option" data-tier="budget-tier">
+                    <div class="option-header">
+                        <div class="option-badge">VALUE</div>
+                        <h3>Budget Tier</h3>
+                        <div class="option-price">AED 8,515</div>
+                    </div>
+                    <div class="option-specs">
+                        <div class="spec">RTX 4070</div>
+                        <div class="spec">Ryzen 7 7700X</div>
+                        <div class="spec">32GB DDR5</div>
+                    </div>
+                    <div class="option-performance">
+                        <div class="perf-bar">
+                            <div class="perf-fill" style="width: 75%"></div>
+                        </div>
+                        <span>1440p Gaming</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Showcase -->
+    <section id="3d-showcase" class="showcase-3d">
+        <div class="container">
+            <div class="showcase-header">
+                <h2>Interactive 3D Model</h2>
+                <p>Explore every angle of your future build</p>
+            </div>
+            <div class="showcase-content">
+                <div class="model-container">
+                    <div id="pc-model" class="pc-model">
+                        <!-- Three.js 3D model will be rendered here -->
+                    </div>
+                    <div class="model-controls">
+                        <button class="control-btn active" data-view="front">Front View</button>
+                        <button class="control-btn" data-view="side">Side View</button>
+                        <button class="control-btn" data-view="top">Top View</button>
+                        <button class="control-btn" data-view="inside">Inside View</button>
+                    </div>
+                    <div class="model-instructions">
+                        <p>🖱️ Click and drag to rotate • 🔍 Scroll to zoom • 📱 Touch and drag on mobile</p>
+                    </div>
+                </div>
+                <div class="showcase-info">
+                    <div class="info-section">
+                        <h3>Build Highlights</h3>
+                        <div class="highlight-list">
+                            <div class="highlight">
+                                <div class="highlight-icon">🎨</div>
+                                <div class="highlight-content">
+                                    <h4>Aesthetic Excellence</h4>
+                                    <p>Lian Li O11 Dynamic Mini with tempered glass panels and synchronized RGB lighting</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight-icon">❄️</div>
+                                <div class="highlight-content">
+                                    <h4>Superior Cooling</h4>
+                                    <p>NZXT Kraken Elite 240 RGB with custom LCD display and optimized airflow</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="highlight-icon">⚡</div>
+                                <div class="highlight-content">
+                                    <h4>Premium Power</h4>
+                                    <p>Corsair RM850e with 80+ Gold efficiency and full modular cables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Components -->
+    <section id="components" class="components-detailed">
+        <div class="container">
+            <div class="section-header">
+                <h2>Component Deep Dive</h2>
+                <p>Every component chosen for maximum performance and longevity</p>
+            </div>
+
+            <!-- CPU Section -->
+            <div class="component-section">
+                <div class="component-visual">
+                    <div class="component-image cpu-visual">
+                        <div class="cpu-chip">
+                            <div class="cpu-pins"></div>
+                            <div class="cpu-die">
+                                <span id="cpu-model">7800X3D</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-details">
+                    <div class="component-header">
+                        <h3 id="cpu-name">AMD Ryzen 7 7800X3D</h3>
+                        <div class="component-price" id="cpu-price">AED 1,489</div>
+                    </div>
+                    <div class="component-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Cores/Threads</span>
+                                <span class="spec-value" id="cpu-cores">8/16</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Base Clock</span>
+                                <span class="spec-value">4.2 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Boost Clock</span>
+                                <span class="spec-value" id="cpu-boost">5.0 GHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Cache</span>
+                                <span class="spec-value">96MB L3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-description">
+                        <h4>Why This CPU?</h4>
+                        <p id="cpu-description">
+                            The Ryzen 7 7800X3D represents the pinnacle of gaming performance with its revolutionary 3D V-Cache technology. 
+                            This CPU delivers exceptional gaming performance while maintaining excellent efficiency for content creation tasks.
+                        </p>
+                        <div class="performance-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Gaming Performance</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 98%"></div>
+                                </div>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Content Creation</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Power Efficiency</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GPU Section -->
+            <div class="component-section reverse">
+                <div class="component-details">
+                    <div class="component-header">
+                        <h3 id="gpu-name">NVIDIA RTX 4070 Ti Super</h3>
+                        <div class="component-price" id="gpu-price">AED 3,500</div>
+                    </div>
+                    <div class="component-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">VRAM</span>
+                                <span class="spec-value" id="gpu-vram">16GB GDDR6X</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">CUDA Cores</span>
+                                <span class="spec-value" id="gpu-cores">8448</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Base Clock</span>
+                                <span class="spec-value">2340 MHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Memory Bus</span>
+                                <span class="spec-value">256-bit</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-description">
+                        <h4>Graphics Powerhouse</h4>
+                        <p id="gpu-description">
+                            The RTX 4070 Ti Super delivers exceptional 4K gaming performance with DLSS 3 Frame Generation and ray tracing capabilities. 
+                            Perfect for both gaming and content creation with hardware-accelerated encoding.
+                        </p>
+                        <div class="performance-metrics">
+                            <div class="metric">
+                                <span class="metric-label">4K Gaming</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Ray Tracing</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Content Creation</span>
+                                <div class="metric-bar">
+                                    <div class="metric-fill" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-visual">
+                    <div class="component-image gpu-visual">
+                        <div class="gpu-card">
+                            <div class="gpu-fans">
+                                <div class="gpu-fan"></div>
+                                <div class="gpu-fan"></div>
+                                <div class="gpu-fan"></div>
+                            </div>
+                            <div class="gpu-pcb">
+                                <span id="gpu-model">RTX 4070 Ti S</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory Section -->
+            <div class="component-section">
+                <div class="component-visual">
+                    <div class="component-image ram-visual">
+                        <div class="ram-sticks">
+                            <div class="ram-stick">
+                                <div class="ram-rgb"></div>
+                                <div class="ram-pcb"></div>
+                            </div>
+                            <div class="ram-stick">
+                                <div class="ram-rgb"></div>
+                                <div class="ram-pcb"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-details">
+                    <div class="component-header">
+                        <h3>Corsair Vengeance RGB DDR5</h3>
+                        <div class="component-price">AED 580</div>
+                    </div>
+                    <div class="component-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Capacity</span>
+                                <span class="spec-value">32GB (2x16GB)</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Speed</span>
+                                <span class="spec-value">6400MHz</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Latency</span>
+                                <span class="spec-value">CL36</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">RGB</span>
+                                <span class="spec-value">Dynamic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-description">
+                        <h4>High-Speed Memory</h4>
+                        <p>
+                            DDR5-6400 provides the bandwidth needed for modern gaming and content creation. 
+                            32GB ensures smooth multitasking and future-proofs your system for years to come.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Storage Section -->
+            <div class="component-section reverse">
+                <div class="component-details">
+                    <div class="component-header">
+                        <h3>Samsung 990 Pro 2TB</h3>
+                        <div class="component-price">AED 580</div>
+                    </div>
+                    <div class="component-specs">
+                        <div class="spec-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">Capacity</span>
+                                <span class="spec-value">2TB</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Interface</span>
+                                <span class="spec-value">PCIe 4.0 NVMe</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Read Speed</span>
+                                <span class="spec-value">7,450 MB/s</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Write Speed</span>
+                                <span class="spec-value">6,900 MB/s</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-description">
+                        <h4>Lightning-Fast Storage</h4>
+                        <p>
+                            The Samsung 990 Pro delivers flagship performance with PCIe 4.0 speeds. 
+                            2TB provides ample space for games, applications, and content creation projects.
+                        </p>
+                    </div>
+                </div>
+                <div class="component-visual">
+                    <div class="component-image ssd-visual">
+                        <div class="ssd-drive">
+                            <div class="ssd-label">990 PRO</div>
+                            <div class="ssd-connector"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Benchmarks -->
+    <section id="performance" class="performance-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Performance Benchmarks</h2>
+                <p>Real-world performance across gaming and productivity tasks</p>
+            </div>
+            
+            <div class="benchmark-grid">
+                <div class="benchmark-category">
+                    <h3>Gaming Performance</h3>
+                    <div class="benchmark-list">
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">Cyberpunk 2077</span>
+                                <span class="game-settings">4K Ultra + RT</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number" id="cyberpunk-fps">85</span>
+                                <span class="fps-label">FPS</span>
+                            </div>
+                        </div>
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">Call of Duty MW3</span>
+                                <span class="game-settings">1440p Ultra</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number" id="cod-fps">165</span>
+                                <span class="fps-label">FPS</span>
+                            </div>
+                        </div>
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">Fortnite</span>
+                                <span class="game-settings">1440p Competitive</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number" id="fortnite-fps">240</span>
+                                <span class="fps-label">FPS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benchmark-category">
+                    <h3>Content Creation</h3>
+                    <div class="benchmark-list">
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">Blender Render</span>
+                                <span class="game-settings">BMW Scene</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number">2:45</span>
+                                <span class="fps-label">MIN</span>
+                            </div>
+                        </div>
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">Adobe Premiere</span>
+                                <span class="game-settings">4K Timeline</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number">Real-time</span>
+                                <span class="fps-label">EDIT</span>
+                            </div>
+                        </div>
+                        <div class="benchmark-item">
+                            <div class="benchmark-game">
+                                <span class="game-name">OBS Streaming</span>
+                                <span class="game-settings">1080p60 + Gaming</span>
+                            </div>
+                            <div class="benchmark-fps">
+                                <span class="fps-number">0%</span>
+                                <span class="fps-label">DROP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future-Proofing Section -->
+    <section id="future-proof" class="future-proof-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built for the Future</h2>
+                <p>Upgrade paths and longevity designed into every component choice</p>
+            </div>
+
+            <div class="future-proof-grid">
+                <div class="future-item">
+                    <div class="future-icon">🔄</div>
+                    <h3>Easy Upgrades</h3>
+                    <p>AM5 socket supports next-gen Ryzen CPUs through 2027+. PCIe 5.0 ready for future graphics cards.</p>
+                    <div class="upgrade-timeline">
+                        <div class="timeline-item">
+                            <span class="year">2024</span>
+                            <span class="upgrade">Current Build</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2025</span>
+                            <span class="upgrade">RTX 50-series Ready</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year">2026</span>
+                            <span class="upgrade">Zen 5+ CPU Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-item">
+                    <div class="future-icon">⚡</div>
+                    <h3>Power Headroom</h3>
+                    <p>850W PSU provides ample power for future high-end GPUs and additional components.</p>
+                    <div class="power-breakdown">
+                        <div class="power-item">
+                            <span class="component">Current System</span>
+                            <span class="watts">~650W</span>
+                        </div>
+                        <div class="power-item">
+                            <span class="component">Available Headroom</span>
+                            <span class="watts">200W+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-item">
+                    <div class="future-icon">🔧</div>
+                    <h3>Expansion Ready</h3>
+                    <p>Multiple M.2 slots, extra RAM slots, and modular design for easy component swaps.</p>
+                    <div class="expansion-list">
+                        <div class="expansion-slot">
+                            <span class="slot-type">M.2 Slots</span>
+                            <span class="slot-count">4 Total (1 Used)</span>
+                        </div>
+                        <div class="expansion-slot">
+                            <span class="slot-type">RAM Slots</span>
+                            <span class="slot-count">4 Total (2 Used)</span>
+                        </div>
+                        <div class="expansion-slot">
+                            <span class="slot-type">PCIe Slots</span>
+                            <span class="slot-count">Multiple Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-item">
+                    <div class="future-icon">🛡️</div>
+                    <h3>Long-term Support</h3>
+                    <p>Premium components with extended warranties and proven reliability records.</p>
+                    <div class="warranty-list">
+                        <div class="warranty-item">
+                            <span class="component">CPU</span>
+                            <span class="period">3 Years</span>
+                        </div>
+                        <div class="warranty-item">
+                            <span class="component">GPU</span>
+                            <span class="period">3 Years</span>
+                        </div>
+                        <div class="warranty-item">
+                            <span class="component">PSU</span>
+                            <span class="period">10 Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Deep Dive -->
+    <section class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Excellence</h2>
+                <p>The engineering decisions behind every component choice</p>
+            </div>
+
+            <div class="tech-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="cooling">Cooling System</button>
+                    <button class="tab-btn" data-tab="airflow">Airflow Design</button>
+                    <button class="tab-btn" data-tab="rgb">RGB Ecosystem</button>
+                    <button class="tab-btn" data-tab="cable">Cable Management</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="cooling">
+                        <div class="tech-detail">
+                            <h3>Advanced Cooling Architecture</h3>
+                            <div class="cooling-diagram">
+                                <div class="cooling-component cpu-cooler">
+                                    <div class="cooler-block">AIO</div>
+                                    <div class="cooler-tubes"></div>
+                                    <div class="radiator">240mm RAD</div>
+                                </div>
+                                <div class="cooling-specs">
+                                    <div class="spec">
+                                        <span class="label">CPU Temps</span>
+                                        <span class="value">65°C Max</span>
+                                    </div>
+                                    <div class="spec">
+                                        <span class="label">GPU Temps</span>
+                                        <span class="value">70°C Max</span>
+                                    </div>
+                                    <div class="spec">
+                                        <span class="label">Noise Level</span>
+                                        <span class="value">&lt;35dB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>The NZXT Kraken Elite 240 provides exceptional cooling performance with its 240mm radiator and high-performance pump. The custom LCD display adds both functionality and aesthetics.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="airflow">
+                        <div class="tech-detail">
+                            <h3>Optimized Airflow Pattern</h3>
+                            <div class="airflow-diagram">
+                                <div class="case-outline">
+                                    <div class="intake-fans">
+                                        <div class="fan-arrow">→</div>
+                                        <div class="fan-arrow">→</div>
+                                        <div class="fan-arrow">→</div>
+                                    </div>
+                                    <div class="exhaust-fans">
+                                        <div class="fan-arrow">↑</div>
+                                        <div class="fan-arrow">↑</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Six Lian Li UNI Fan SL-Infinity fans create positive pressure with optimized intake and exhaust positioning. This ensures cool air reaches all components while maintaining low noise levels.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="rgb">
+                        <div class="tech-detail">
+                            <h3>Synchronized RGB Lighting</h3>
+                            <div class="rgb-components">
+                                <div class="rgb-item">
+                                    <span class="component">RAM</span>
+                                    <span class="zones">10 Zones</span>
+                                </div>
+                                <div class="rgb-item">
+                                    <span class="component">Fans</span>
+                                    <span class="zones">36 LEDs</span>
+                                </div>
+                                <div class="rgb-item">
+                                    <span class="component">AIO</span>
+                                    <span class="zones">LCD + Ring</span>
+                                </div>
+                                <div class="rgb-item">
+                                    <span class="component">Cables</span>
+                                    <span class="zones">24 LEDs</span>
+                                </div>
+                            </div>
+                            <p>All RGB components sync through motherboard software for unified lighting effects. Create custom profiles for different games or moods.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="cable">
+                        <div class="tech-detail">
+                            <h3>Premium Cable Management</h3>
+                            <div class="cable-features">
+                                <div class="cable-feature">
+                                    <h4>Fully Modular PSU</h4>
+                                    <p>Only connect the cables you need for a cleaner build</p>
+                                </div>
+                                <div class="cable-feature">
+                                    <h4>RGB Extension Cables</h4>
+                                    <p>Lian Li Strimer Plus adds visual flair to power connections</p>
+                                </div>
+                                <div class="cable-feature">
+                                    <h4>Dual Chamber Design</h4>
+                                    <p>Hide PSU and cables in the rear chamber for clean aesthetics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Parts List -->
+    <section id="parts-list" class="parts-list-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Complete Parts List</h2>
+                <p>Every component with detailed specifications, pricing, and availability</p>
+            </div>
+
+            <div class="parts-grid">
+                <!-- Power Supply -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Power Supply</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="psu-visual">
+                            <div class="psu-body">
+                                <div class="psu-fan"></div>
+                                <div class="psu-label">RM850e</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>CORSAIR RM850e (2025) Fully Modular Silent ATX Power Supply</h3>
+                        <p class="part-subtitle">12V-2x6 Cable - ATX 3.1 and PCIe 5.1 Compatible, Cybenetics Gold Efficiency, 105°C-Rated Capacitors</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">850 Watts</div>
+                            <div class="spec-tag">80+ Gold</div>
+                            <div class="spec-tag">Fully Modular</div>
+                        </div>
+                        <div class="part-price">AED 472.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">Ships within 5-6 days</span>
+                                <span class="seller">Sold by: Yefd MALL</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery 1 - 4 Sep</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Memory -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Memory</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="memory-visual">
+                            <div class="ram-module">
+                                <div class="ram-rgb-strip"></div>
+                                <div class="ram-label">VENGEANCE</div>
+                            </div>
+                            <div class="ram-module">
+                                <div class="ram-rgb-strip"></div>
+                                <div class="ram-label">RGB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>Corsair VENGEANCE RGB DDR5 RAM 32GB (2x16GB)</h3>
+                        <p class="part-subtitle">6400MHz CL36 Intel XMP iCUE Compatible Computer Memory - Black</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">DDR5 32GB</div>
+                            <div class="spec-tag">6400MHz</div>
+                            <div class="spec-tag">CL36</div>
+                            <div class="spec-tag">RGB</div>
+                        </div>
+                        <div class="part-price">AED 580.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Amazon Direct</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery Tomorrow, 21 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Case</div>
+                        <div class="part-stock limited-stock">Limited Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="case-visual">
+                            <div class="case-body">
+                                <div class="case-glass"></div>
+                                <div class="case-logo">O11</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>Lian Li O11 Dynamic Mini</h3>
+                        <p class="part-subtitle">Midi-Tower, Tempered Glass, Black</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">Mini-ITX/mATX/ATX</div>
+                            <div class="spec-tag">Tempered Glass</div>
+                            <div class="spec-tag">Dual Chamber</div>
+                        </div>
+                        <div class="part-price">AED 435.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">Only 1 left - order soon</span>
+                                <span class="seller">Amazon Direct</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery Tomorrow, 21 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU Cooler -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">CPU Cooler</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="cooler-visual">
+                            <div class="aio-pump">
+                                <div class="lcd-display">NZXT</div>
+                                <div class="pump-ring"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>NZXT Kraken Elite 240 RGB</h3>
+                        <p class="part-subtitle">AIO CPU Liquid Cooler - 240mm Radiator - F240 RGB Core Fan - Customizable 2.72" IPS LCD</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">240mm AIO</div>
+                            <div class="spec-tag">LCD Display</div>
+                            <div class="spec-tag">RGB</div>
+                            <div class="spec-tag">AM5/LGA1700</div>
+                        </div>
+                        <div class="part-price">AED 692.02</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Ships from Amazon US</span>
+                            </div>
+                            <div class="delivery-date">Import charges included</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CPU -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Processor</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="cpu-visual-small">
+                            <div class="cpu-package">
+                                <div class="cpu-die-small">
+                                    <span>7800X3D</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3 id="parts-cpu-name">AMD Ryzen 7 7800X3D</h3>
+                        <p class="part-subtitle">4.2GHz (Turbo 5.0GHz) 8 Core 16 Threads 96MB Cache AM5 Processor - Tray</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">8C/16T</div>
+                            <div class="spec-tag">5.0GHz Boost</div>
+                            <div class="spec-tag">96MB L3</div>
+                            <div class="spec-tag">AM5</div>
+                        </div>
+                        <div class="part-price" id="parts-cpu-price">AED 1,489.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Sold by: Desket_Shop</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery 22 - 23 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RGB Cables -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">RGB Cables</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="cable-visual">
+                            <div class="rgb-cable">
+                                <div class="cable-connector"></div>
+                                <div class="cable-leds"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>Lian Li PW8-V2 ADDRESSABLE RGB STRIMER Plus 8-PIN</h3>
+                        <p class="part-subtitle">Addressable RGB Extension Cable for Enhanced Aesthetics</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">8-Pin</div>
+                            <div class="spec-tag">Addressable RGB</div>
+                            <div class="spec-tag">Single Pack</div>
+                        </div>
+                        <div class="part-price">AED 189.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Sold by: Crazy Gamerz</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery 22 - 24 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Fans -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Case Fans</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="fans-visual">
+                            <div class="fan-pack">
+                                <div class="mini-fan"></div>
+                                <div class="mini-fan"></div>
+                                <div class="mini-fan"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>Lian Li UNI Fan SL-Infinity Wireless 120</h3>
+                        <p class="part-subtitle">Triple Pack (Reverse Blade) - 2.4 GHz Wireless Signal ARGB Fan Control - Double Infinity Mirror</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">120mm x6</div>
+                            <div class="spec-tag">Wireless RGB</div>
+                            <div class="spec-tag">Reverse Blade</div>
+                            <div class="spec-tag">Low Noise</div>
+                        </div>
+                        <div class="part-price">AED 858.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Amazon Direct</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery Tomorrow, 21 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 2 (Triple Packs)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motherboard -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Motherboard</div>
+                        <div class="part-stock limited-stock">Limited Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="mobo-visual">
+                            <div class="motherboard">
+                                <div class="mobo-socket"></div>
+                                <div class="mobo-slots"></div>
+                                <div class="mobo-logo">ROG</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>ASUS ROG Strix B650E-E Gaming WiFi</h3>
+                        <p class="part-subtitle">AMD Ryzen AM5 ATX motherboard, 16 + 2 power stages, DDR5, four M.2 slots, PCIe 5.0, WiFi 6E</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">AM5 Socket</div>
+                            <div class="spec-tag">PCIe 5.0</div>
+                            <div class="spec-tag">WiFi 6E</div>
+                            <div class="spec-tag">4x M.2</div>
+                        </div>
+                        <div class="part-price">AED 1,009.12</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">Only 1 left - order soon</span>
+                                <span class="seller">Ships from Amazon UK</span>
+                            </div>
+                            <div class="delivery-date">Import charges included</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage -->
+                <div class="part-card">
+                    <div class="part-header">
+                        <div class="part-category">Storage</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="ssd-visual-small">
+                            <div class="nvme-drive">
+                                <div class="ssd-label-small">990 PRO</div>
+                                <div class="ssd-capacity">2TB</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3>SAMSUNG 990 PRO SSD 2TB</h3>
+                        <p class="part-subtitle">PCIe 4.0 M.2 2280 Internal Solid State Hard Drive, Sequential Read Speeds Up to 7,450 MB/s</p>
+                        <div class="part-specs">
+                            <div class="spec-tag">2TB</div>
+                            <div class="spec-tag">PCIe 4.0</div>
+                            <div class="spec-tag">7,450 MB/s</div>
+                            <div class="spec-tag">M.2 2280</div>
+                        </div>
+                        <div class="part-price">AED 580.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Amazon Direct</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery Tomorrow, 21 Aug</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphics Card (Dynamic) -->
+                <div class="part-card gpu-card">
+                    <div class="part-header">
+                        <div class="part-category">Graphics Card</div>
+                        <div class="part-stock in-stock">In Stock</div>
+                    </div>
+                    <div class="part-image">
+                        <div class="gpu-visual-small">
+                            <div class="graphics-card">
+                                <div class="gpu-fans-small">
+                                    <div class="gpu-fan-small"></div>
+                                    <div class="gpu-fan-small"></div>
+                                </div>
+                                <div class="gpu-label-small" id="parts-gpu-model">RTX 4070 Ti S</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part-details">
+                        <h3 id="parts-gpu-name">NVIDIA RTX 4070 Ti Super</h3>
+                        <p class="part-subtitle" id="parts-gpu-subtitle">High-performance graphics card for 4K gaming and content creation</p>
+                        <div class="part-specs">
+                            <div class="spec-tag" id="parts-gpu-vram">16GB GDDR6X</div>
+                            <div class="spec-tag">DLSS 3</div>
+                            <div class="spec-tag">Ray Tracing</div>
+                            <div class="spec-tag">PCIe 4.0</div>
+                        </div>
+                        <div class="part-price" id="parts-gpu-price">AED 3,500.00</div>
+                        <div class="part-shipping">
+                            <div class="shipping-info">
+                                <span class="shipping-time">In Stock</span>
+                                <span class="seller">Premium Graphics Partner</span>
+                            </div>
+                            <div class="delivery-date">FREE delivery 2-3 days</div>
+                        </div>
+                        <div class="part-quantity">
+                            <span>Quantity: 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parts Summary -->
+            <div class="parts-summary">
+                <div class="summary-header">
+                    <h3>Build Summary</h3>
+                    <div class="total-price">
+                        <span class="total-label">Total Cost:</span>
+                        <span class="total-amount" id="parts-total">AED 9,804.14</span>
+                    </div>
+                </div>
+                <div class="summary-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10</span>
+                        <span class="stat-text">Components</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-text">In Stock</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-text">Limited Stock</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-text">Years Warranty</span>
+                    </div>
+                </div>
+                <div class="summary-actions">
+                    <button class="action-btn primary" onclick="window.print()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9V2H18V9" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 18H4C3.45 18 3 17.55 3 17V11C3 10.45 3.45 10 4 10H20C20.55 10 21 10.45 21 11V17C21 17.55 20.55 18 20 18H18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 14H18V22H6V14Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Print Parts List
+                    </button>
+                    <button class="action-btn secondary" onclick="exportPartsList()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 15V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15" stroke="currentColor" stroke-width="2"/>
+                            <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 15V3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Export List
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Build Comparison -->
+    <section id="comparison" class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tier Comparison</h2>
+                <p>Choose the perfect configuration for your needs and budget</p>
+            </div>
+
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="tier-column">
+                        <h3>Component</h3>
+                    </div>
+                    <div class="tier-column top-tier">
+                        <h3>Top Tier</h3>
+                        <div class="tier-price">AED 9,804</div>
+                    </div>
+                    <div class="tier-column mid-tier">
+                        <h3>Mid Tier</h3>
+                        <div class="tier-price">AED 9,104</div>
+                    </div>
+                    <div class="tier-column budget-tier">
+                        <h3>Budget Tier</h3>
+                        <div class="tier-price">AED 8,515</div>
+                    </div>
+                </div>
+
+                <div class="comparison-rows">
+                    <div class="comparison-row">
+                        <div class="component-name">Processor</div>
+                        <div class="tier-spec">Ryzen 7 7800X3D</div>
+                        <div class="tier-spec">Ryzen 7 7800X3D</div>
+                        <div class="tier-spec">Ryzen 7 7700X</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="component-name">Graphics Card</div>
+                        <div class="tier-spec">RTX 4070 Ti Super</div>
+                        <div class="tier-spec">RTX 4070</div>
+                        <div class="tier-spec">RTX 4070</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="component-name">Memory</div>
+                        <div class="tier-spec">32GB DDR5-6400</div>
+                        <div class="tier-spec">32GB DDR5-6400</div>
+                        <div class="tier-spec">32GB DDR5-6400</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="component-name">4K Gaming</div>
+                        <div class="tier-spec performance">Excellent</div>
+                        <div class="tier-spec performance">Very Good</div>
+                        <div class="tier-spec performance">Good</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="component-name">1440p Gaming</div>
+                        <div class="tier-spec performance">Maxed Out</div>
+                        <div class="tier-spec performance">High-Ultra</div>
+                        <div class="tier-spec performance">High</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Lakshya PC build</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long will this build stay relevant?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This build is designed to remain competitive for 5+ years. The AM5 platform will support future CPU generations through 2027, and the RTX 4070 Ti Super has enough VRAM and performance for upcoming games. The modular design allows for easy upgrades when needed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the difference between the three tiers?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The main differences are in the CPU and GPU. Top tier features the RTX 4070 Ti Super for 4K gaming, while mid and budget tiers use the RTX 4070. The budget tier also uses the 7700X CPU instead of the 7800X3D, offering great value while maintaining excellent performance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I upgrade individual components later?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! The build is designed for easy upgrades. You can add more RAM, additional storage, upgrade the GPU, or even swap the CPU. The 850W PSU provides headroom for more powerful components, and the case has excellent accessibility.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quiet is this build during operation?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Very quiet! The AIO cooler and optimized fan curves keep noise under 35dB during normal use. The Lian Li fans are designed for low noise, and the case provides excellent sound dampening. You'll barely notice it running.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What kind of performance can I expect?</h3>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Expect 4K gaming at 60+ FPS in most titles with the top tier, 1440p high refresh gaming across all tiers, and excellent content creation performance. The system handles streaming, video editing, and multitasking with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>LAKSHYA PC</h3>
+                    <p>Built for Excellence, Designed for the Future</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Build</h4>
+                        <a href="#components">Components</a>
+                        <a href="#performance">Performance</a>
+                        <a href="#comparison">Compare Tiers</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Features</h4>
+                        <a href="#3d-showcase">3D Model</a>
+                        <a href="#future-proof">Future-Proof</a>
+                        <a href="#technical">Technical</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lakshya PC Build Showcase. Crafted with passion for performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-fixed.js"></script>
+    <script src="advanced-3d.js"></script>
+</body>
+</html>
